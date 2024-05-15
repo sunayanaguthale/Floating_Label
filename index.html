@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Floating Text</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Login</h1>
+        <input type="text" id="username" class="text-input" autocomplete="off" placeholder="Enter your username" required>
+        <label for="username" class="label"> Username</label>
+        <br>
+        <input type="password" id="username" class="text-input" autocomplete="off" placeholder="Enter your Password" required>
+        <label for="password" class="pass">Password</label>
+        <br>
+        <button class="btn">Login</button>
+    </div>
+
+    <script>
+        document.querySelectorAll(".input-text").forEach((Element) => {
+            Element.addEventListener("blur", (event) => {
+                if (event.target.value != "") {
+                    event.target.nextElementSibling.classList.add("filled");
+                } else {
+                    event.target.nextElementSibling.classList.remove("filled");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+* {
+    background: #272530;
+}
+
+.container {
+    width: 280px;
+    position: relative;
+    margin-top: 20%;
+    margin-left: 30%;
+}
+
+.label {
+    position: relative;
+    left: 10px;
+    top: -30px;
+    transition: all 0.2s;
+    padding: 0 2px;
+    z-index: 1;
+    color: #b3b3b3;
+}
+
+.text-input {
+    padding: 0.8rem;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #2f2c45;
+    background: #272530;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s;
+    color: #fff;
+}
+
+
+/* .label::before {
+    content: "";
+    height: 8px;
+    background: #fff;
+    position: relative;
+    left: 10%;
+    top: 10px;
+    width: 100%;
+    z-index: -1;
+} */
+
+.text-input:focus {
+    border: 2px solid #7e4ccb;
+}
+
+.text-input:focus+.label,
+.filled {
+    top: -55px;
+    color: #7e4ccb;
+    font-size: 15px;
+    /* background-color: #fff; */
+}
+
+.text-input:focus+.pass,
+.filled {
+    top: 115px;
+    color: #7e4ccb;
+    font-size: 15px;
+    /* background-color: #fff; */
+}
+
+.text-input::placeholder {
+    font-size: 16px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.text-input:focus::placeholder {
+    opacity: 1;
+}
+
+.pass {
+    position: absolute;
+    left: 10px;
+    top: 60%;
+    transition: all 0.2s;
+    padding: 0 2px;
+    z-index: 1;
+    color: #b3b3b3;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #2f2c45;
+    color: #b3b3b3;
+}
+
+.btn:hover {
+    color: #7e4ccb;
+    border: 2px solid #7e4ccb;
+}
